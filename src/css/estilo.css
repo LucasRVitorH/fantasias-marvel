@@ -5,9 +5,12 @@
 }
 
 body {
-    background: linear-gradient(180deg, #fff7f0 0%, #ffffff 100%);
     color: #333;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url(../assets/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header {
@@ -41,27 +44,85 @@ header img {
     text-decoration: underline;
 }
 
-
-.carrossel-titulo {
-    background-color: #d41922;
-    color: white;
-    padding: 20px 40px;
-    border-radius: 12px;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 80px auto;
-    max-width: 1000px;
-}
-
 .carrossel {
-    height: 500px;
+    height: 600px;
     border-radius: 20px;
     margin: 60px auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     max-width: 1000px;
+    position: relative;
+}
+
+.carrossel-titulo {
+    color: #F0141E;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 3rem;
+    font-weight: bold;
+    top: 80%;
+    left: 7%;
+    position: absolute;
+}
+
+.fantasias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fantasia {
+    background-color: #1f1e1e;
+    border: 3px solid #e62429;
+    border-radius: 10px;
+    width: 280px;
+    padding: 15px;
+    text-align: center;
+}
+
+.fantasia img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.nome {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 5px;
+}
+
+.preco {
+    font-size: 1.1em;
+    color: #e62429;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 0.95em;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.comprar {
+    display: inline-block;
+    background-color: #e62429;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 footer {
