@@ -4,21 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="./src/css/lista.css">
   <title>Lista Tarefas</title>
 </head>
 
 <body>
-  <h1>LISTA DE TAREFAS</h1>
-  <p><label for="task">TAREFA:</label>
-    <input type="text" id="task" size="25px">
-  </p>
-  <div>
-    <button id="btnAdicionar" onclick="adcionaTarefa()">Adicionar Tarefa</button>
-    <button id="btnRemover" onclick="removeTarefa()">Remover Tarefa</button>
-  </div>
+  <header>
+    <img src="./src/assets/Logo.png" alt="Logo">
 
-  <p id="lista"></p>
+    <nav class="menu">
+      <a href="./index.html">Home</a>
+      <a href="#" id="login">Login</a>
+      <a href="./sobre.html">Sobre</a>
+      <a href="./fantasias.html">Fantasias</a>
+    </nav>
+  </header>
+
+    <h1>LISTA DE TAREFAS</h1>
+    <p><label for="task">TAREFA:</label>
+      <input type="text" id="task" size="25px">
+    </p>
+    <div>
+      <button id="btnAdicionar" onclick="adcionaTarefa()">Adicionar Tarefa</button>
+      <button id="btnRemover" onclick="removeTarefa()">Remover Tarefa</button>
+    </div>
+
+    <p id="lista"></p>
+  <footer>
+    <div class="footer-esquerda">
+      <p>Marvel fantasias — Seja seu herói favorito.</p>
+      <div class="footer-socials">
+        <i class="fab fa-instagram icon-instagram"></i>
+        <i class="fab fa-linkedin icon-linkedin"></i>
+        <i class="fab fa-youtube icon-youtube"></i>
+        <i class="fab fa-twitter icon-twitter"></i>
+      </div>
+    </div>
+
+    <div class="footer-centro">
+      <img src="./src/assets/logo.png" alt="logo">
+    </div>
+
+    <div class="footer-direita">
+      <ul>
+        <li>Suporte - </li>
+        <li>Central de ajuda</li>
+        <li>Contato</li>
+        <li>Privacidade</li>
+        <li>Termos de uso</li>
+        <li>Sobre nós</li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    <p>©2025 Marvel fantasias. Todos os direitos reservados.</p>
+  </div>
 
   <script src="./src/js/lista.js"></script>
 </body>
